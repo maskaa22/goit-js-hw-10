@@ -41,7 +41,7 @@ const handleFormSubmit = e => {
   makePromise({ delay: delayInput.value, shouldResolve: valueRadioButton })
     .then(value =>
       iziToast.success({
-        iconUrl: './img/bi_check2-circle.svg',
+        iconUrl: './img/bi-check2-circle.svg',
         iconColor: '#fff',
         imageWidth: 24,
         messageColor: '#fff',
@@ -52,7 +52,7 @@ const handleFormSubmit = e => {
     )
     .catch(error =>
       iziToast.error({
-        iconUrl: './img/bi_x-octagon.svg',
+        iconUrl: './img/bi-x-octagon.svg',
         iconColor: '#fff',
         imageWidth: 24,
         messageColor: '#fff',
