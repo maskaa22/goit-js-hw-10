@@ -38,10 +38,13 @@ const handleFormSubmit = e => {
     });
   };
 
+  const iconResolve = './img/bi-check2-circle.svg';
+  const iconReject = './img/bi-x-octagon.svg';
+
   makePromise({ delay: delayInput.value, shouldResolve: valueRadioButton })
     .then(value =>
       iziToast.success({
-        iconUrl: './img/bi-check2-circle.svg',
+        iconUrl: iconResolve,
         iconColor: '#fff',
         imageWidth: 24,
         messageColor: '#fff',
@@ -52,7 +55,7 @@ const handleFormSubmit = e => {
     )
     .catch(error =>
       iziToast.error({
-        iconUrl: './img/bi-x-octagon.svg',
+        iconUrl: iconReject,
         iconColor: '#fff',
         imageWidth: 24,
         messageColor: '#fff',
