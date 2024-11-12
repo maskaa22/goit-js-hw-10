@@ -1,5 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import iconResolve from '../img/bi-check2-circle.png';
+import iconReject from '../img/bi-x-octagon.png';
 
 iziToast.settings({
   position: 'topRight',
@@ -37,9 +39,6 @@ const handleFormSubmit = e => {
       }, delay);
     });
   };
-
-   const iconResolve = './img/bi-check2-circle.png';
-   const iconReject = './img/bi-x-octagon.png';
 
   makePromise({ delay: delayInput.value, shouldResolve: valueRadioButton })
     .then(value =>
