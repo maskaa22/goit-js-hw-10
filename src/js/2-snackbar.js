@@ -38,8 +38,8 @@ const handleFormSubmit = e => {
     });
   };
 
-  const iconResolve = './img/bi-check2-circle.svg';
-  const iconReject = './img/bi-x-octagon.svg';
+   const iconResolve = './img/bi-check2-circle.png';
+   const iconReject = './img/bi-x-octagon.png';
 
   makePromise({ delay: delayInput.value, shouldResolve: valueRadioButton })
     .then(value =>
